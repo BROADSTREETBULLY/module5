@@ -1,0 +1,115 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: #c29d9d;
+  color: black;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calc {
+  background-color: #d9d9d9;
+  border: black solid 3px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 450px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  gap: 20px;
+}
+
+h1 {
+  margin-right: auto;
+  font-size: 40px;
+  border-radius: 20px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+select {
+  border: black solid 3px;
+  border-radius: 20px;
+  height: 70px;
+  width: 170px;
+  background-color: #c29d9d;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpolyline points='2,5 8,11 14,5' stroke='%23333' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 30px; /* 👈 increase this */
+  padding-right: 80px;
+  padding-left: 40px;
+}
+
+input {
+  border: black solid 3px;
+  border-radius: 20px;
+  height: 70px;
+  width: 442px;
+  background-color: #c29d9d;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+}
+
+button {
+  border: black solid 3px;
+  border-radius: 20px;
+  height: 70px;
+  width: 250px;
+  background-color: #c29d9d;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  appearance: none;
+}
+
+.dresult {
+  border: black solid 3px;
+  border-radius: 20px;
+  height: 70px;
+  width: 200px;
+  background-color: #c29d9d;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  appearance: none;
+  text-align: center;
+}
