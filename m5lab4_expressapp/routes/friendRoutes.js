@@ -107,7 +107,7 @@ router.put("/:id", (req, res) => {
   // Replace the old friend data for friendId with the new data from updatedFriend
   let friendIndex = friends.findIndex((friend) => friend.id == friendId);
   // Modify this response with the updated friend, or a 404 if not found
-  if (friendIndex !== 1) {
+  if (friendIndex !== -1) {
     friends[friendIndex] = updatedFriend;
     res.status(200).json({
             result: "Updated friend with ID " + friendId,

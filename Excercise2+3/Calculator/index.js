@@ -1,15 +1,4 @@
-const express = require("express");
-const cors = require("cors");
-const router1 = require("./routes/myTestRoutes");
-const calculatorRoutes = require('./routes/calculatorRoutes')
-
-const app = express();
-
-app.use(cors())
-app.use("/", router1);
-app.use('/calculator', calculatorRoutes);
-
-
+const app = require("./app")
 
 const port = 3100
 
