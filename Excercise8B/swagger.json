@@ -1,0 +1,66 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Fake eCommerce Store",
+    "description": "Express backend that proxies the Fake Store API",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:3300",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Products",
+      "description": "API for fetching products and categories"
+    }
+  ],
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/api/products": {
+      "get": {
+        "tags": ["Products"],
+        "summary": "Get all products",
+        "responses": {
+          "200": {
+            "description": "Returns a list of all products from the Fake Store API"
+          }
+        }
+      }
+    },
+    "/api/products/categories": {
+      "get": {
+        "tags": ["Products"],
+        "summary": "Get all categories",
+        "responses": {
+          "200": {
+            "description": "Returns a list of all available product categories"
+          }
+        }
+      }
+    },
+    "/api/products/category/{category}": {
+      "get": {
+        "tags": ["Products"],
+        "summary": "Get products by category",
+        "parameters": [
+          {
+            "name": "category",
+            "in": "path",
+            "required": true,
+            "description": "The category name (e.g. electronics, jewelery)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns all products matching the given category"
+          }
+        }
+      }
+    }
+  }
+}
